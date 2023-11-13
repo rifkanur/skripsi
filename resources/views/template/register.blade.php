@@ -45,10 +45,6 @@
                 <input type="password" class="form-control" placeholder="Email">
                 <i class="fa fa-key"></i>
               </div>
-              <div class="group">
-                <input type="password" class="form-control" placeholder="No Orang Tua">
-                <i class="fa fa-key"></i>
-              </div>
       </form>
       <div class="footer-links row">
         <div class="col-xs-6"><a href="#"><i class="fa fa-sign-in"></i> Login</a></div>

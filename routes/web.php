@@ -72,6 +72,9 @@ Route::get('/kisikisiadmin', function () {
 Route::get('/paketsoaladmin', function () {
     return view('layout.paketsoaladmin');
 });
+Route::get('/indexselesai', function () {
+    return view('layout.indexselesai');
+});
 
 
 
