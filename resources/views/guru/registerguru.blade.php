@@ -19,7 +19,7 @@
         </div>
         <div class="group">
           <input type="text" class="form-control" placeholder="Tanggal Lahir">
-          <i class="fa fa-envelope-o"></i>
+          <i class="fa fa-key"></i>
         </div>
         <div class="group">
           <input type="password" class="form-control" placeholder="Jenis Kelamin">
@@ -30,16 +30,16 @@
           <i class="fa fa-key"></i>
         </div>
         <div class="group">
+            <input type="password" class="form-control" placeholder="Mata Pelajaran">
+            <i class="fa fa-key"></i>
+          </div>
+          <div class="group">
             <input type="password" class="form-control" placeholder="Kelas">
             <i class="fa fa-key"></i>
           </div>
           <div class="group">
             <input type="password" class="form-control" placeholder="Email">
-            <i class="fa fa-key"></i>
-          </div>
-          <div class="group">
-            <input type="password" class="form-control" placeholder="No Orang Tua">
-            <i class="fa fa-key"></i>
+            <i class="fa fa-envelope-o"></i>
           </div>
         <button type="submit" class="btn btn-default btn-block">REGISTER NOW</button>
       </div>

@@ -32,8 +32,8 @@ Route::get('/jadwal', function () {
 Route::get('/login', function () {
     return view('layout.login');
 });
-Route::get('/register', function () {
-    return view('layout.register');
+Route::get('/registersiswa', function () {
+    return view('siswa.registersiswa');
 });
 Route::get('/paketsoal', function () {
     return view('guru.paketsoal');
@@ -74,6 +74,12 @@ Route::get('/paketsoaladmin', function () {
 });
 Route::get('/indexselesai', function () {
     return view('layout.indexselesai');
+});
+Route::get('/registerguru', function () {
+    return view('guru.registerguru');
+});
+Route::get('/forgetpassword', function () {
+    return view('template.forgetpassword');
 });
 
 

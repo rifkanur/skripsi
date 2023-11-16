@@ -14,8 +14,12 @@ return new class extends Migration
     public function up()
     {
         Schema::create('registers', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->integer('NIS')->unique();
+            $table->string('Nama');
+            $table->date('Tanggal_Lahir');
+            $table->string('Jenis_Kelamin');
+            $table->integer('Kelas');
+            $table->string('Email')->unique();
         });
     }
 

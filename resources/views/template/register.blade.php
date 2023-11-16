@@ -20,21 +20,16 @@
           <h1>Register</h1>
           <h4>Join to our community now !</h4>
         </div>
-        <div class="form-area">
             <div class="group">
               <input type="text" class="form-control" placeholder="Nama">
-              <i class="fa fa-user"></i>
-            </div>
-            <div class="group">
-              <input type="text" class="form-control" placeholder="Tanggal Lahir">
               <i class="fa fa-envelope-o"></i>
             </div>
             <div class="group">
-              <input type="password" class="form-control" placeholder="Jenis Kelamin">
+              <input type="password" class="form-control" placeholder="Tanggal Lahir">
               <i class="fa fa-key"></i>
             </div>
             <div class="group">
-              <input type="password" class="form-control" placeholder="Agama">
+              <input type="password" class="form-control" placeholder="Jenis Kelamin">
               <i class="fa fa-key"></i>
             </div>
             <div class="group">

@@ -13,15 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('data_gurus', function (Blueprint $table) {
-            $table->id();
-            $table->Nama();
-            $table->Tanggal_Lahir();
-            $table->Jenis_Kelamin();
-            $table->Agama();
-            $table->Mata_Pelajaran();
-            $table->Kelas();
-            $table->Email();
+        Schema::create('data_guru', function (Blueprint $table) {
+            $table->string('Nama');
+            $table->date('Tanggal_Lahir');
+            $table->string('Jenis_Kelamin');
+            $table->string('Agama');
+            $table->string('Mata_Pelajaran');
+            $table->integer('Kelas');
+            $table->string('email')->unique();
             $table->timestamps();
         });
     }
