@@ -98,23 +98,7 @@
   <!-- End Page Header -->
 
   <!-- Start Presentation -->
-  <div class="row presentation">
-
-    <div class="col-lg-8 col-md-6 titles">
-      <span class="icon color8-bg"><i class="fa fa-pencil"></i></span>
-      <h1>Paket Soal</h1>
-      <h4>Style your text with Text Editors as you wish.</h4>
-    </div>
-
-    <div class="col-lg-4 col-md-6">
-      <ul class="list-unstyled list">
-        <li><i class="fa fa-check"></i>Simple and Beautiful <li>
-        <li><i class="fa fa-check"></i><a href="{{asset('admin')}}/https://jhollingworth.github.io/bootstrap-wysihtml5/" target="_blank">Bootstrap-wysihtml5</a><li>
-        <li><i class="fa fa-check"></i><a href="{{asset('admin')}}/https://summernote.org/" target="_blank">Summernote</a><li>
-      </ul>
-    </div>
-
-  </div>
+  
   <!-- End Presentation -->
  <!-- //////////////////////////////////////////////////////////////////////////// -->
  <form>
@@ -130,67 +114,9 @@
         <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
       </div>
     </div>
-    <fieldset class="form-group">
-        <div class="row">
-       <label for="inputPassword3" class="col-sm-2 col-form-label">Mata Pelajaran</label>
-            <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              Dropdown
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-          </div>
-    </fieldset>
-    <fieldset class="form-group">
-        <div class="row">
-          <label for="inputPassword3" class="col-sm-2 col-form-label">Jurusan</label>
-          <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Jurusan
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">DKV</a></li>
-                <li><a href="#">PPLG</a></li>
-              </ul>
-            </div>
-      </fieldset>
-      <fieldset class="form-group">
-        <div class="row">
-          <label for="inputPassword3" class="col-sm-2 col-form-label">Metode Jawaban</label>
-          <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Pilih!!
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">ABC</a></li>
-                <li><a href="#">ABCD</a></li>
-                <li><a href="#">ABCDE</a></li>
-              </ul>
-            </div>
-      </fieldset>
-      <fieldset class="form-group">
-        <div class="row">
-          <label for="inputPassword3" class="col-sm-2 col-form-label">Skala Nilai</label>
-          <div class="dropdown">
-              <label class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Skala 100
-                <span class="caret"></span>
-              </label>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Pilih</a></li>
-                <li><a href="#">100</a></li>
-                <li><a href="#">Sesuai Nilai Soal</a></li>
-              </ul>
-            </div>
-      </fieldset>
+    
+    
+       
 
   </form>
 <!-- START CONTAINER -->
@@ -202,7 +128,7 @@
   <div class="row">
 
 
-    <div class="col-md-12">
+    <div class="col-md-9">
       <div class="panel panel-default">
 
         <div class="panel-title">
@@ -212,14 +138,101 @@
             <div class="panel-body">
 
               <form>
-                <div id="summernote">Hello Summernote</div>
-                <button class="btn btn-default">Submit</button>
+                <div id="summernote1">Hello Summernote</div>
+                
               </form>
 
             </div>
 
+
+            <div class="panel-title" style="margin-top: 10px">
+              JAWABAN A
+            </div>
+    
+                <div class="panel-body">
+    
+                  <form>
+                    <div id="summernote2">Hello Summernote</div>
+                    
+                  </form>
+    
+                </div>
+                <div class="panel-title" style="margin-top: 10px">
+                  JAWABAN B
+                </div>
+        
+                    <div class="panel-body">
+        
+                      <form>
+                        <div id="summernote3">Hello Summernote</div>
+                      
+                      </form>
+        
+                    </div>
+                    <div class="panel-title" style="margin-top: 10px">
+                      JAWABAN C
+                    </div>
+            
+                        <div class="panel-body">
+            
+                          <form>
+                            <div id="summernote4">Hello Summernote</div>
+                           
+                          </form>
+            
+                        </div>
+                        <div class="panel-title" style="margin-top: 10px">
+                          JAWABAN D
+                        </div>
+                
+                            <div class="panel-body">
+                
+                              <form>
+                                <div id="summernote5">Hello Summernote</div>
+                                <button class="btn btn-default">Submit</button>
+                              </form>
+                
+                            </div>
       </div>
     </div>
+    <div class="col-md-3">
+      <div class="panel panel-default">
+
+        <div class="panel-title">
+          SOAL
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <a href=" " class="btn btn-primary rounded-circle " style="margin: 10px">1</a>
+          </div>
+          <div class="col-md-3">
+            <a href=" " class="btn btn-primary rounded-circle " style="margin: 10px">2</a>
+          </div>
+          <div class="col-md-3">
+            <a href=" " class="btn btn-primary rounded-circle"style="margin: 10px">3</a>
+          </div>
+          <div class="col-md-3">
+            <a href=" " class="btn btn-primary rounded-circle"style="margin: 10px">4</a>
+          </div>
+          
+          <div class="col-md-3">
+            <a href=" " class="btn btn-primary rounded-circle"style="margin: 10px">5</a>
+          </div>
+          <div class="col-md-3">
+            <a href=" " class="btn btn-primary rounded-circle"style="margin: 10px">6</a>
+          </div>
+          <div class="col-md-3">
+            <a href=" " class="btn btn-primary rounded-circle" style="margin: 10px">7</a>
+          </div>
+        </div>
+        
+
+        
+            
+
+      </div>
+    </div>
+
 
 
   </div>
@@ -430,7 +443,19 @@ Summernote
 
   /* SUMMERNOTE*/
   $(document).ready(function() {
-  $('#summernote').summernote();
+  $('#summernote1').summernote();
+});
+$(document).ready(function() {
+  $('#summernote2').summernote();
+});
+$(document).ready(function() {
+  $('#summernote3').summernote();
+});
+$(document).ready(function() {
+  $('#summernote4').summernote();
+});
+$(document).ready(function() {
+  $('#summernote5').summernote();
 });
 </script>
 

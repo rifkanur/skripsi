@@ -8,83 +8,85 @@
    <!-- //////////////////////////////////////////////////////////////////////////// -->
   <!-- START CONTAINER -->
   <div class="container-padding">
-    <form>
-        <div class="form-group row">
-          <label for="inputEmail3" class="col-sm-2 col-form-label">Sesi Pelaksanaan</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="inputPassword3" class="col-sm-2 col-form-label">Mata Pelajaran</label>
-          <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-          </div>
-        </div>
-        <fieldset class="form-group">
-          <div class="row">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">Kelas</label>
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  Kelas
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                  <li><a href="#">X</a></li>
-                  <li><a href="#">XI</a></li>
-                  <li><a href="#">XII</a></li>
-                </ul>
+   
+    <div class="row">
+      <div class="col-md-9">
+        <div class="panel panel-default">
+          <div class="panel-title">SOAL NO 1</div>
+              <div class="panel-body">
+                <h4>sebutkan apa kepanjangan dari HTML</h4>
+                <div class="radio radio-info">
+                  <input type="radio" name="radio2" id="radio4" value="option2" >
+                  <label for="radio4">
+                      jawaban 1
+                  </label>
               </div>
-        </fieldset>
-
-        <fieldset class="form-group">
-            <div class="row">
-              <label for="inputPassword3" class="col-sm-2 col-form-label">Jurusan</label>
-              <div class="dropdown">
-                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Jurusan
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">DKV</a></li>
-                    <li><a href="#">PPLG</a></li>
-                  </ul>
-                </div>
-          </fieldset>
-
-      </form>
-      <div class="container mt-sm-5 my-1">
-        <div class="question ml-sm-5 pl-sm-5 pt-2">
-            <div class="py-2 h5"><b>1. which option best describes your job role?</b></div>
-            <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
-                <input type="radio" name="radio">
-                <label class="options">Small Business Owner or Employee
-                    <span class="checkmark"></span>
-                </label>
-                <br>
-                <input type="radio" name="radio">
-                <label class="options">Nonprofit Owner or Employee
-                    <span class="checkmark"></span>
-                </label>
-                <br>
-                <input type="radio" name="radio">
-                <label class="options">Journalist or Activist
-                <span class="checkmark"></span>
-                </label>
-                <br>
-                <input type="radio" name="radio">
-                <label class="options">Other
-                    <span class="checkmark"></span>
+              <div class="radio radio-info">
+                <input type="radio" name="radio2" id="radio3" value="option1">
+                <label for="radio3">
+                    jawaban 2
                 </label>
             </div>
+            <div class="radio radio-info">
+              <input type="radio" name="radio2" id="radio5" value="option1">
+              <label for="radio5">
+                  jawaban 3
+              </label>
+          </div>
+          <div class="radio radio-info">
+            <input type="radio" name="radio2" id="radio6" value="option1">
+            <label for="radio6">
+                jawaban 4
+            </label>
         </div>
-        <div class="d-flex align-items-center pt-3">
-            <div id="prev">
-                <button class="btn btn-primary">Previous</button> <button class="btn btn-success">Next</button>
-            </div>
-            <div class="ml-auto mr-sm-5">
-            </div>
+        <div class="radio radio-info">
+          <input type="radio" name="radio2" id="radio7" value="option1">
+          <label for="radio7">
+              jawaban 5
+          </label>
+      </div>
+                  
+  
+              </div>
         </div>
+      </div>
+      <div class="col-md-3">
+        <div class="panel panel-default">
+  
+          <div class="panel-title">
+            SOAL
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <a href=" " class="btn btn-primary rounded-circle " style="margin: 10px">1</a>
+            </div>
+            <div class="col-md-3">
+              <a href=" " class="btn btn-primary rounded-circle " style="margin: 10px">2</a>
+            </div>
+            <div class="col-md-3">
+              <a href=" " class="btn btn-primary rounded-circle"style="margin: 10px">3</a>
+            </div>
+            <div class="col-md-3">
+              <a href=" " class="btn btn-primary rounded-circle"style="margin: 10px">4</a>
+            </div>
+            
+            <div class="col-md-3">
+              <a href=" " class="btn btn-primary rounded-circle"style="margin: 10px">5</a>
+            </div>
+            <div class="col-md-3">
+              <a href=" " class="btn btn-primary rounded-circle"style="margin: 10px">6</a>
+            </div>
+            <div class="col-md-3">
+              <a href=" " class="btn btn-primary rounded-circle" style="margin: 10px">7</a>
+            </div>
+          </div>
+          
+  
+          
+              
+  
+        </div>
+      </div>
     </div>
 </div>
   <!-- END CONTAINER -->
