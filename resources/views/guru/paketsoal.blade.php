@@ -114,6 +114,34 @@
         <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
       </div>
     </div>
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Kelas</label>
+      <div class="col-sm-10">
+        <select name="" id="" class="form-control">
+          <option value="">---</option>
+          <option value="">X</option>
+          <option value="">XI</option>
+          <option value="">XII</option>
+
+
+        </select>
+        
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Jurusan</label>
+      <div class="col-sm-10">
+        <select name="" id="" class="form-control">
+          <option value="">---</option>
+          <option value="">DKV</option>
+          <option value="">PPLG</option>
+          
+
+
+        </select>
+        
+      </div>
+    </div>
     
     
        

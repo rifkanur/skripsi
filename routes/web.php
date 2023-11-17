@@ -82,6 +82,10 @@ Route::get('/forgetpassword', function () {
     return view('template.forgetpassword');
 });
 
+Route::get('/list-ujian', function () {
+    return view('siswa.listujian');
+});
+
 
 
 

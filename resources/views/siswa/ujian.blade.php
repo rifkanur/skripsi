@@ -2,9 +2,18 @@
 @section('content')
 
 <div class="content">
+  <div class="page-header">
+    <h1 class="title">Form Ujian</h1>
+      <ol class="breadcrumb">
+        <li><a href="index.html">Ujian</a></li>
+        <li><a href="#">Mapel</a></li>
+        <li class="active">Bahasa Indonesia</li>
+      </ol>
 
-    <!-- Start Presentation -->
-    <!-- End Presentation -->
+  
+
+  </div>
+
    <!-- //////////////////////////////////////////////////////////////////////////// -->
   <!-- START CONTAINER -->
   <div class="container-padding">
@@ -14,7 +23,7 @@
         <div class="panel panel-default">
           <div class="panel-title">SOAL NO 1</div>
               <div class="panel-body">
-                <h4>sebutkan apa kepanjangan dari HTML</h4>
+                <h4 style="margin-bottom: 40px">sebutkan apa kepanjangan dari HTML</h4>
                 <div class="radio radio-info">
                   <input type="radio" name="radio2" id="radio4" value="option2" >
                   <label for="radio4">
@@ -87,6 +96,26 @@
   
         </div>
       </div>
+    </div>
+
+    <div class="row" style="margin-bottom: 20%">
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-5">
+            <a href="" class="btn btn-primary">soal sebelumnya</a>
+            <div class="btn btn-warning">
+              <div class="checkbox checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox13" value="option1">
+                <label for="inlineCheckbox13"> Ragu Ragu </label>
+              </div>
+            </div>
+            <a href="" class="btn btn-primary">soal selanjutnya</a>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+      
     </div>
 </div>
   <!-- END CONTAINER -->

@@ -52,59 +52,67 @@
       <div class="col-md-12">
         <div class="panel panel-default">
           <div class="panel-title">
-            Jadwal Ujian
+            DAtaTables
           </div>
           <div class="panel-body table-responsive">
-     <!-- Table-->
-              <table id="example0" class="table display">
+  
+              <div id="example0_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="example0_length"><label>Show <select name="example0_length" aria-controls="example0" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="example0_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="example0"></label></div><table id="example0" class="table display dataTable no-footer" role="grid" aria-describedby="example0_info">
                   <thead>
-                      <tr>
-                          <th>Hari</th>
-                          <th>Tanggal</th>
-                          <th>Jam</th>
-                          <th>Mapel</th>
-                          <th>Kelas</th>
-                          <th>Jurusan</th>
-                    </tr>
+                      <tr role="row">
+                        <th class="sorting_asc" tabindex="0" aria-controls="example0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 253px;">Nomor</th>
+                        <th class="sorting" tabindex="0" aria-controls="example0" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 399px;">Hari</th>
+                        <th class="sorting" tabindex="0" aria-controls="example0" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 186px;">Tanggal</th>
+                        <th class="sorting" tabindex="0" aria-controls="example0" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 99px;">Jam</th>
+                        <th class="sorting" tabindex="0" aria-controls="example0" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 209px;">Mapel</th>
+                        <th class="sorting" tabindex="0" aria-controls="example0" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 150px;">Jelas</th>
+                        <th class="sorting" tabindex="0" aria-controls="example0" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 150px;">Jurusan</th>
+
+                      </tr>
                   </thead>
-
-
                   <tbody>
-                      <tr>
+                      <tr role="row" class="odd">
+                          <td class="sorting_1">1</td>
                           <td>Senin</td>
-                          <td>12/08/2023</td>
-                          <td>07.00</td>
-                          <td>PABP</td>
-                          <td>X, XI, XII</td>
-                          <td>DKV & PPLG</td>
+                          <td>10-juli-2023</td>
+                          <td>09:00</td>
+                          <td>Bahasa Indoneisa</td>
+                          <td>XII</td>
+                          <td>RPL</td>
                       </tr>
-                      <tr>
-                          <td>Senin</td>
-                          <td>12/08/2023</td>
-                          <td>08.00</td>
-                          <td>PPKN</td>
-                          <td>X, XI, XII</td>
-                          <td>DKV & PPLG</td>
-                      </tr>
-                      <tr>
-                          <td>Senin</td>
-                          <td>12/08/2023</td>
-                          <td>09.00</td>
-                          <td>Matematika</td>
-                          <td>X, XI, XII</td>
-                          <td>DKV & PPLG</td>
-                      </tr>
-                      <tr>
-                          <td>Senin</td>
-                          <td>12/08/2023</td>
-                          <td>10.00</td>
-                          <td>B.Inggris</td>
-                          <td>X, XI, XII</td>
-                          <td>DKV & PPLG</td>
-                      </tr>
+                      <tr role="row" class="odd">
+                        <td class="sorting_1">1</td>
+                        <td>Senin</td>
+                        <td>10-juli-2023</td>
+                        <td>09:00</td>
+                        <td>Bahasa Indoneisa</td>
+                        <td>XII</td>
+                        <td>RPL</td>
+                    </tr>
+                    <tr role="row" class="odd">
+                      <td class="sorting_1">1</td>
+                      <td>Senin</td>
+                      <td>10-juli-2023</td>
+                      <td>09:00</td>
+                      <td>Bahasa Indoneisa</td>
+                      <td>XII</td>
+                      <td>RPL</td>
+                  </tr>
+                  <tr role="row" class="odd">
+                    <td class="sorting_1">1</td>
+                    <td>Senin</td>
+                    <td>10-juli-2023</td>
+                    <td>09:00</td>
+                    <td>Bahasa Indoneisa</td>
+                    <td>XII</td>
+                    <td>RPL</td>
+                </tr>
+                
                   </tbody>
-              </table>
+              </table><div class="dataTables_info" id="example0_info" role="status" aria-live="polite">Showing 1 to 25 of 31 entries</div><div class="dataTables_paginate paging_simple_numbers" id="example0_paginate"><a class="paginate_button previous disabled" aria-controls="example0" data-dt-idx="0" tabindex="0" id="example0_previous">Previous</a><span><a class="paginate_button current" aria-controls="example0" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="example0" data-dt-idx="2" tabindex="0">2</a></span><a class="paginate_button next" aria-controls="example0" data-dt-idx="3" tabindex="0" id="example0_next">Next</a></div></div>
+  
+  
           </div>
+  
         </div>
       </div>
       <!-- End Panel -->
