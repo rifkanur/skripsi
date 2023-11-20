@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\JadwalController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,9 @@ Route::get('/index', function () {
     return view('layout.index');
 });
 
+Route::post('/insertJadwal', [JadwalController::class, 'insertjadwal']);
+Route::get('/jadwal', [JadwalController::class, 'jadwal']);
+
 Route::get('/template', function () {
     return view('template.templateadmin');
 });
@@ -26,9 +30,7 @@ Route::get('/dataguru', function () {
 Route::get('/datasiswa', function () {
     return view('layout.datasiswa');
 });
-Route::get('/jadwal', function () {
-    return view('layout.jadwal');
-});
+
 Route::get('/login', function () {
     return view('layout.login');
 });
@@ -84,6 +86,18 @@ Route::get('/forgetpassword', function () {
 
 Route::get('/list-ujian', function () {
     return view('siswa.listujian');
+});
+Route::get('/kisikisiguru', function () {
+    return view('guru.kisikisiguru');
+});
+Route::get('/kisikisisiswa', function () {
+    return view('siswa.kisikisisiswa');
+});
+Route::get('/kisikisiadmin', function () {
+    return view('siswa.kisikisiadmin');
+});
+Route::get('/index', function () {
+    return view('layout.index');
 });
 
 

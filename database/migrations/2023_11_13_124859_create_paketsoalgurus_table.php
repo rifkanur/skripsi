@@ -14,8 +14,16 @@ return new class extends Migration
     public function up()
     {
         Schema::create('paketsoalgurus', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->string('Nama_Paket_Soal');
+            $table->string('Mata_Pelajaran');
+            $table->string('Kelas');
+            $table->string('Jurusan');
+            $table->string('Soal_Ujian');
+            $table->string('Jawaban_A');
+            $table->string('Jawaban_B');
+            $table->string('Jawaban_C');
+            $table->string('Jawaban_D');
+            $table->string('Jawaban_E');
         });
     }
 

@@ -27,23 +27,6 @@
     <!-- End Page Header -->
 
     <!-- Start Presentation -->
-    <div class="row presentation">
-
-      <div class="col-lg-8 col-md-6 titles">
-        <span class="icon color10-bg"><i class="fa fa-table"></i></span>
-        <h1>Jadwal Ujian</h1>
-        <h4>Highly flexible tool, based upon the foundations of progressive enhancement<br> and will add advanced interaction controls to any HTML table.</h4>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <ul class="list-unstyled list">
-          <li><i class="fa fa-check"></i>Easy to Use<li>
-          <li><i class="fa fa-check"></i>Group Options<li>
-          <li><i class="fa fa-check"></i><a href="http://www.datatables.net/" target="_blank">Data Guru</a><li>
-        </ul>
-      </div>
-
-    </div>
     <!-- End Presentation -->
     <!-- Start Row -->
     <div class="row">
@@ -55,7 +38,7 @@
             DAtaTables
           </div>
           <div class="panel-body table-responsive">
-  
+
               <div id="example0_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="example0_length"><label>Show <select name="example0_length" aria-controls="example0" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="example0_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="example0"></label></div><table id="example0" class="table display dataTable no-footer" role="grid" aria-describedby="example0_info">
                   <thead>
                       <tr role="row">
@@ -106,13 +89,13 @@
                     <td>XII</td>
                     <td>RPL</td>
                 </tr>
-                
+
                   </tbody>
               </table><div class="dataTables_info" id="example0_info" role="status" aria-live="polite">Showing 1 to 25 of 31 entries</div><div class="dataTables_paginate paging_simple_numbers" id="example0_paginate"><a class="paginate_button previous disabled" aria-controls="example0" data-dt-idx="0" tabindex="0" id="example0_previous">Previous</a><span><a class="paginate_button current" aria-controls="example0" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="example0" data-dt-idx="2" tabindex="0">2</a></span><a class="paginate_button next" aria-controls="example0" data-dt-idx="3" tabindex="0" id="example0_next">Next</a></div></div>
-  
-  
+
+
           </div>
-  
+
         </div>
       </div>
       <!-- End Panel -->

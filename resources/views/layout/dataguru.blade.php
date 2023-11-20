@@ -27,23 +27,6 @@
     <!-- End Page Header -->
 
     <!-- Start Presentation -->
-    <div class="row presentation">
-
-      <div class="col-lg-8 col-md-6 titles">
-        <span class="icon color10-bg"><i class="fa fa-table"></i></span>
-        <h1>Data Guru</h1>
-        <h4>Highly flexible tool, based upon the foundations of progressive enhancement<br> and will add advanced interaction controls to any HTML table.</h4>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <ul class="list-unstyled list">
-          <li><i class="fa fa-check"></i>Easy to Use<li>
-          <li><i class="fa fa-check"></i>Group Options<li>
-          <li><i class="fa fa-check"></i><a href="http://www.datatables.net/" target="_blank">Data Guru</a><li>
-        </ul>
-      </div>
-
-    </div>
     <!-- End Presentation -->
 
 
@@ -70,72 +53,24 @@
                           <th>Tanggal Lahir</th>
                           <th>Jenis Kelamin</th>
                           <th>Agama</th>
-                          <th>Mapel</th>
                           <th>Email</th>
+                          <th>Password</th>
                           <th>Aksi</th>
                       </tr>
                   </thead>
 
 
                   <tbody>
-                      <tr>
-                          <td>Rifka Nur Fitriyah</td>
-                          <td>22 Agustus 2000</td>
-                          <td>Perempuan</td>
-                          <td>Islam</td>
-                          <td>PDKK XI RPL</td>
-                          <td>rifka22082000@gmail.com</td>
-                          <td class="">
-                            <a href="" class="btn btn-danger">
-                            <i class="fa falist fa-trash"></i>
-                            </a>
+                    @foreach ($dataguru as $item )
 
-                            <a href="" class="btn btn-warning mt-2">
-                                <i class="fa falist fa-pencil"></i>
-                            </a>
-                        </td>
-                      </tr>
+                    @endforeach
                       <tr>
-                          <td>Rifka Nur Fitriyah</td>
-                          <td>22 Agustus 2000</td>
-                          <td>Perempuan</td>
-                          <td>Islam</td>
-                          <td>PDKK XI RPL</td>
-                          <td>rifka22082000@gmail.com</td>
-                          <td class="">
-                            <a href="" class="btn btn-danger">
-                            <i class="fa falist fa-trash"></i>
-                            </a>
-
-                            <a href="" class="btn btn-warning mt-2">
-                                <i class="fa falist fa-pencil"></i>
-                            </a>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td>Rifka Nur Fitriyah</td>
-                          <td>22 Agustus 2000</td>
-                          <td>Perempuan</td>
-                          <td>Islam</td>
-                          <td>PDKK XI RPL</td>
-                          <td>rifka22082000@gmail.com</td>
-                          <td class="">
-                            <a href="" class="btn btn-danger">
-                            <i class="fa falist fa-trash"></i>
-                            </a>
-
-                            <a href="" class="btn btn-warning mt-2">
-                                <i class="fa falist fa-pencil"></i>
-                            </a>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td>Rifka Nur Fitriyah</td>
-                          <td>22 Agustus 2000</td>
-                          <td>Perempuan</td>
-                          <td>Islam</td>
-                          <td>PDKK XI RPL</td>
-                          <td>rifka22082000@gmail.com</td>
+                          <td>{{ $item->Nama }}</td>
+                          <td>{{ $item->Tanggal_Lahir }}</td>
+                          <td>{{ $item->Jenis_Kelamin }}</td>
+                          <td>{{ $item->Agama }}</td>
+                          <td>{{ $item->Email }}</td>
+                          <td>{{ $item->Password }}</td>
                           <td class="">
                             <a href="" class="btn btn-danger">
                             <i class="fa falist fa-trash"></i>

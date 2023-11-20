@@ -14,12 +14,15 @@ return new class extends Migration
     public function up()
     {
         Schema::create('data_siswa', function (Blueprint $table) {
-            $table->integer('NIS')->unique();
+            $table->id();
+            $table->integer('NIS');
             $table->string('Nama');
             $table->date('Tanggal_Lahir');
             $table->string('Jenis_Kelamin');
             $table->integer('Kelas');
+            $table->string('Jurusan');
             $table->string('Email')->unique();
+            $table->string('Password')->unique();
             $table->timestamps();
         });
     }

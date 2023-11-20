@@ -32,7 +32,7 @@
       <div class="footer-links row">
         <div class="col-xs-6"><a href="/registersiswa"><i class="fa fa-external-link"></i> Register Siswa</a></div>
         <div class="col-xs-6"><a href="/registerguru"><i class="fa fa-external-link"></i> Register Guru</a></div><br>
-        <div class="col-xs-6"><a href="#"><i class="fa fa-lock"></i> Forgot password</a></div>
+        <div class="col-xs-6"><a href="/forgetpassword"><i class="fa fa-lock"></i> Forgot password</a></div>
       </div>
     </div>
 

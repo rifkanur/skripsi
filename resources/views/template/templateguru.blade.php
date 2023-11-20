@@ -63,7 +63,7 @@
           <li><a href="index.html"><span class="icon color5"><i class="fa fa-home"></i></span>Dashboard<span class="label label-default">2</span></a></li>
           <li><a href="#"><span class="icon color10"><i class="fa fa-check-square-o"></i></span>Ujian Online<span class="caret"></span></a>
             <ul>
-              <li><a href="/kisikisi">Kisi - Kisi</a></li>
+              <li><a href="/kisikisiguru">Kisi - Kisi</a></li>
               <li><a href="/paketsoal">Paket Soal</a></li>
               <li><a href="/koreksiujian">Koreksi Ujian</a></li>
               <li><a href="/laporan">Laporan</a></li>

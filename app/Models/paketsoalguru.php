@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class paketsoalguru extends Model
 {
     use HasFactory;
+
 }

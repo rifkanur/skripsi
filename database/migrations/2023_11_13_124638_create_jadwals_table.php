@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('Hari');
             $table->date('Tanggal');
-            $table->date('Jam');
+            $table->time('Jam');
             $table->string('Mata_Pelajaran');
             $table->integer('Kelas');
             $table->string('Jurusan');

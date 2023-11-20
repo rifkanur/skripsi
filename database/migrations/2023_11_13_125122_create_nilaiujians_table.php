@@ -14,8 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('nilaiujians', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->integer('No');
+            $table->string('Nama_Siswa');
+            $table->string('Kelas');
+            $table->string('Jurusan');
+            $table->integer('Jumlah_Benar');
+            $table->integer('Jumlah_Salah');
+            $table->integer('Nilai_Akhir');
         });
     }
 

@@ -27,23 +27,6 @@
     <!-- End Page Header -->
 
     <!-- Start Presentation -->
-    <div class="row presentation">
-
-      <div class="col-lg-8 col-md-6 titles">
-        <span class="icon color10-bg"><i class="fa fa-table"></i></span>
-        <h1>Jadwal Ujian</h1>
-        <h4>Highly flexible tool, based upon the foundations of progressive enhancement<br> and will add advanced interaction controls to any HTML table.</h4>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <ul class="list-unstyled list">
-          <li><i class="fa fa-check"></i>Easy to Use<li>
-          <li><i class="fa fa-check"></i>Group Options<li>
-          <li><i class="fa fa-check"></i><a href="http://www.datatables.net/" target="_blank">Data Guru</a><li>
-        </ul>
-      </div>
-
-    </div>
     <!-- End Presentation -->
 
   <!-- START CONTAINER -->
@@ -75,37 +58,47 @@
           <h4 class="modal-title" id="myModalLabel">Modal title</h4>
         </div>
         <div class="modal-body">
-            <form class="row g-3">
+            <form class="row g-3" action="/insertJadwal" method="POST">
+                @csrf
                 <div class="col-12">
                   <label for="inputNanme4" class="form-label">Hari</label>
-                  <input type="text" class="form-control" id="inputNanme4">
+                  <input type="text" name="Hari" class="form-control" id="inputNanme4">
                 </div>
                 <div class="col-12">
                   <label for="inputEmail4" class="form-label">Tanggal</label>
-                  <input type="email" class="form-control" id="inputEmail4">
+                  <input type="date" name="Tanggal" class="form-control" id="inputEmail4">
                 </div>
                 <div class="col-12">
                   <label for="inputPassword4" class="form-label">Jam</label>
-                  <input type="password" class="form-control" id="inputPassword4">
+                  <input type="text" name="Jam" class="form-control" id="inputPassword4">
                 </div>
                 <div class="col-12">
                   <label for="inputAddress" class="form-label">Mapel</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  <input type="text" name="Mata_Pelajaran" class="form-control" id="inputAddress" placeholder="1234 Main St">
                 </div>
                 <div class="col-12">
                     <label for="inputPassword4" class="form-label">Kelas</label>
-                    <input type="password" class="form-control" id="inputPassword4">
+                    <select name="Kelas" name="Kelas" id="" class="form-control" >
+                        <option value="10">X</option>
+                        <option value="11">XI</option>
+                        <option value="12">XII</option>
+                      </select>
                   </div>
                   <div class="col-12">
                     <label for="inputPassword4" class="form-label">Jurusan</label>
-                    <input type="password" class="form-control" id="inputPassword4">
-                  </div>
-              </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+                    <select name="Jurusan" id="" class="form-control" >
+                        <option value="DKV 1">DKV 1</option>
+                        <option value="DKV 2">DKV 2</option>
+                        <option value="PPLG 1">PPLG 1</option>
+                        <option value="PPLG 2">PPLG 2</option>
+                      </select>
+                </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+            </form>
       </div>
     </div>
   </div>
@@ -126,74 +119,24 @@
 
 
                   <tbody>
-                      <tr>
-                          <td>Senin</td>
-                          <td>12/08/2023</td>
-                          <td>07.00</td>
-                          <td>PABP</td>
-                          <td>X, XI, XII</td>
-                          <td>DKV & PPLG</td>
-                          <td class="">
-                            <a href="" class="btn btn-danger">
-                            <i class="fa falist fa-trash"></i>
-                            </a>
-
-                            <a href="" class="btn btn-warning mt-2">
-                                <i class="fa falist fa-pencil"></i>
-                            </a>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td>Senin</td>
-                          <td>12/08/2023</td>
-                          <td>08.00</td>
-                          <td>PPKN</td>
-                          <td>X, XI, XII</td>
-                          <td>DKV & PPLG</td>
-                          <td class="">
-                            <a href="" class="btn btn-danger">
-                            <i class="fa falist fa-trash"></i>
-                            </a>
-
-                            <a href="" class="btn btn-warning mt-2">
-                                <i class="fa falist fa-pencil"></i>
-                            </a>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td>Senin</td>
-                          <td>12/08/2023</td>
-                          <td>09.00</td>
-                          <td>Matematika</td>
-                          <td>X, XI, XII</td>
-                          <td>DKV & PPLG</td>
-                          <td class="">
-                            <a href="" class="btn btn-danger">
-                            <i class="fa falist fa-trash"></i>
-                            </a>
-
-                            <a href="" class="btn btn-warning mt-2">
-                                <i class="fa falist fa-pencil"></i>
-                            </a>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td>Senin</td>
-                          <td>12/08/2023</td>
-                          <td>10.00</td>
-                          <td>B.Inggris</td>
-                          <td>X, XI, XII</td>
-                          <td>DKV & PPLG</td>
-                          <td class="">
-                            <a href="" class="btn btn-danger">
-                            <i class="fa falist fa-trash"></i>
-                            </a>
-
-                            <a href="" class="btn btn-warning mt-2">
-                                <i class="fa falist fa-pencil"></i>
-                            </a>
-                        </td>
-                      </tr>
+                    @foreach ($jadwal as $item )
+                    <tr>
+                        <td>{{ $item->Hari }}</td>
+                        <td>{{ $item->Tanggal }}</td>
+                        <td>{{ $item->Jam }}</td>
+                        <td>{{ $item->Mata_Pelajaran }}</td>
+                        <td>{{ $item->Kelas }}</td>
+                        <td>{{ $item->Jurusan }}</td>
+                        <td class="">
+                          <a href="" class="btn btn-danger">
+                          <i class="fa falist fa-trash"></i>
+                          </a>
+                          <a href="" class="btn btn-warning mt-2">
+                              <i class="fa falist fa-pencil"></i>
+                          </a>
+                      </td>
+                    </tr>
+                    @endforeach
                   </tbody>
               </table>
           </div>

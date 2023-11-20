@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\login;
+use App\Models\kisikisiguru;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class LoginController extends Controller
+
+class KisikisiguruController extends Controller
 {
     public function registerGuru(Request $request){
         $data = $request->all();
-        login::create($data);
+        kisikisiguru::create($data);
 
     }
 }

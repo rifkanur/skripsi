@@ -60,7 +60,7 @@
 
         <ul class="sidebar-panel nav">
           <li class="sidetitle">MAIN</li>
-          <li><a href="index.html"><span class="icon color5"><i class="fa fa-home"></i></span>Dashboard<span class="label label-default">2</span></a></li>
+          <li><a href="/index"><span class="icon color5"><i class="fa fa-home"></i></span>Dashboard<span class="label label-default">2</span></a></li>
           <li><a href="#"><span class="icon color9"><i class="fa fa-th"></i></span>Data Manajement<span class="caret"></span></a>
             <ul>
               <li><a href="/dataguru">Data guru</a></li>

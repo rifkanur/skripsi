@@ -10,14 +10,14 @@
         <li class="active">Bahasa Indonesia</li>
       </ol>
 
-  
+
 
   </div>
 
    <!-- //////////////////////////////////////////////////////////////////////////// -->
   <!-- START CONTAINER -->
   <div class="container-padding">
-   
+
     <div class="row">
       <div class="col-md-9">
         <div class="panel panel-default">
@@ -54,14 +54,14 @@
               jawaban 5
           </label>
       </div>
-                  
-  
+
+
               </div>
         </div>
       </div>
       <div class="col-md-3">
         <div class="panel panel-default">
-  
+
           <div class="panel-title">
             SOAL
           </div>
@@ -78,7 +78,7 @@
             <div class="col-md-3">
               <a href=" " class="btn btn-primary rounded-circle"style="margin: 10px">4</a>
             </div>
-            
+
             <div class="col-md-3">
               <a href=" " class="btn btn-primary rounded-circle"style="margin: 10px">5</a>
             </div>
@@ -89,11 +89,11 @@
               <a href=" " class="btn btn-primary rounded-circle" style="margin: 10px">7</a>
             </div>
           </div>
-          
-  
-          
-              
-  
+
+
+
+
+
         </div>
       </div>
     </div>
@@ -115,7 +115,7 @@
           <div class="col-md-4"></div>
         </div>
       </div>
-      
+
     </div>
 </div>
   <!-- END CONTAINER -->

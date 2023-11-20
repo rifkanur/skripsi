@@ -15,7 +15,9 @@ return new class extends Migration
     {
         Schema::create('kisikisigurus', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('KIKD');
+            $table->string('Materi');
+            $table->string('Indikator_Soal');
         });
     }
 
