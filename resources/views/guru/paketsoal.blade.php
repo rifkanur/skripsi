@@ -98,64 +98,51 @@
   <!-- End Page Header -->
 
   <!-- Start Presentation -->
-  
+
   <!-- End Presentation -->
  <!-- //////////////////////////////////////////////////////////////////////////// -->
  <form>
     <div class="form-group row">
       <label for="inputEmail3" class="col-sm-2 col-form-label">Nama Paket Soal</label>
       <div class="col-sm-10">
-        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        <input type="text" class="form-control" id="inputEmail3" placeholder="id Paket soal">
       </div>
     </div>
     <div class="form-group row">
       <label for="inputPassword3" class="col-sm-2 col-form-label">Mata Pelajaran</label>
       <div class="col-sm-10">
-        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+        <input type="text" class="form-control" id="inputPassword3" placeholder="Mata Pelajaran">
       </div>
     </div>
     <div class="form-group row">
       <label for="inputPassword3" class="col-sm-2 col-form-label">Kelas</label>
       <div class="col-sm-10">
         <select name="" id="" class="form-control">
-          <option value="">---</option>
-          <option value="">X</option>
-          <option value="">XI</option>
-          <option value="">XII</option>
-
-
+          <option value="0">---</option>
+          <option value="10">X</option>
+          <option value="11">XI</option>
+          <option value="12">XII</option>
         </select>
-        
+
       </div>
     </div>
     <div class="form-group row">
       <label for="inputPassword3" class="col-sm-2 col-form-label">Jurusan</label>
       <div class="col-sm-10">
         <select name="" id="" class="form-control">
-          <option value="">---</option>
-          <option value="">DKV</option>
-          <option value="">PPLG</option>
-          
-
-
+          <option value="---">---</option>
+          <option value="DKV 1">DKV 1</option>
+          <option value="DKV 1">DKV 2</option>
+          <option value="PPLG 1">PPLG 1</option>
+          <option value="PPLG 1">PPLG 2</option>
         </select>
-        
       </div>
     </div>
-    
-    
-       
-
   </form>
 <!-- START CONTAINER -->
 <div class="container-padding">
-
-
-
   <!-- Start Row -->
   <div class="row">
-
-
     <div class="col-md-9">
       <div class="panel panel-default">
 
@@ -167,7 +154,7 @@
 
               <form>
                 <div id="summernote1">Hello Summernote</div>
-                
+
               </form>
 
             </div>
@@ -176,50 +163,50 @@
             <div class="panel-title" style="margin-top: 10px">
               JAWABAN A
             </div>
-    
+
                 <div class="panel-body">
-    
+
                   <form>
                     <div id="summernote2">Hello Summernote</div>
-                    
+
                   </form>
-    
+
                 </div>
                 <div class="panel-title" style="margin-top: 10px">
                   JAWABAN B
                 </div>
-        
+
                     <div class="panel-body">
-        
+
                       <form>
                         <div id="summernote3">Hello Summernote</div>
-                      
+
                       </form>
-        
+
                     </div>
                     <div class="panel-title" style="margin-top: 10px">
                       JAWABAN C
                     </div>
-            
+
                         <div class="panel-body">
-            
+
                           <form>
                             <div id="summernote4">Hello Summernote</div>
-                           
+
                           </form>
-            
+
                         </div>
                         <div class="panel-title" style="margin-top: 10px">
                           JAWABAN D
                         </div>
-                
+
                             <div class="panel-body">
-                
+
                               <form>
                                 <div id="summernote5">Hello Summernote</div>
                                 <button class="btn btn-default">Submit</button>
                               </form>
-                
+
                             </div>
       </div>
     </div>
@@ -242,7 +229,7 @@
           <div class="col-md-3">
             <a href=" " class="btn btn-primary rounded-circle"style="margin: 10px">4</a>
           </div>
-          
+
           <div class="col-md-3">
             <a href=" " class="btn btn-primary rounded-circle"style="margin: 10px">5</a>
           </div>
@@ -253,10 +240,10 @@
             <a href=" " class="btn btn-primary rounded-circle" style="margin: 10px">7</a>
           </div>
         </div>
-        
 
-        
-            
+
+
+
 
       </div>
     </div>
