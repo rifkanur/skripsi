@@ -28,4 +28,20 @@ class JadwalController extends Controller
         ]);
         return redirect('/jadwal');
     }
+    public function hapus($id){
+        $data=jadwal::whereId($id);
+        $data->delete();
+        return redirect('/jadwal');
+    }
+    public function update($id,Request $request){
+        $data=jadwal::whereId($id)->first();
+        $data->Hari=$request->Hari;
+        $data->Tanggal=$request->Tanggal;
+        $data->Jam=$request->Jam;
+        $data->Mata_Pelajaran=$request->Mata_Pelajaran;
+        $data->Kelas=$request->Kelas;
+        $data->Jurusan=$request->Jurusan;
+        $data->save();
+        return redirect('/jadwal');
+    }
 }

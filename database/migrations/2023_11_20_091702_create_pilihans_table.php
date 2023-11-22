@@ -15,14 +15,14 @@ return new class extends Migration
     {
         Schema::create('pilihans', function (Blueprint $table) {
             $table->id();
-            $table->id('id_Soal');
+            $table->integer('id_Soal');
             $table->string('Pilihan_A');
             $table->string('Pilihan_B');
             $table->string('Pilihan_C');
             $table->string('Pilihan_D');
             $table->string('Pilihan_E');
-            $table->valid('ya');
-            $table->valid('tidak');
+            $table->string('ya');
+            $table->string('tidak');
             $table->timestamps();
         });
     }

@@ -128,17 +128,73 @@
                         <td>{{ $item->Kelas }}</td>
                         <td>{{ $item->Jurusan }}</td>
                         <td class="">
-                          <a href="" class="btn btn-danger">
+                          <a href="/jadwal/{{ $item->id}}/hapus" class="btn btn-danger">
                           <i class="fa falist fa-trash"></i>
                           </a>
-                          <a href="" class="btn btn-warning mt-2">
-                              <i class="fa falist fa-pencil"></i>
-                          </a>
+                          <button type="button" class="btn btn-warning mt-2" data-toggle="modal" data-target="#myModal{{ $item->id }}">
+                            <i class="fa falist fa-pencil"></i>
+                          </button>
                       </td>
                     </tr>
                     @endforeach
                   </tbody>
               </table>
+              @foreach ($jadwal as $item )
+              <div class="modal fade" id="myModal{{ $item->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3" action="/jadwal/{{ $item->id }}/update" method="POST">
+                            @csrf
+                            <div class="col-12">
+                              <label for="inputNanme4" class="form-label">Hari</label>
+                              <input type="text" value="{{ $item->Hari }}" name="Hari" class="form-control" id="inputNanme4">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputEmail4" class="form-label">Tanggal</label>
+                              <input type="date" value="{{ $item->Tanggal }}" name="Tanggal" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputPassword4" class="form-label">Jam</label>
+                              <input type="text" value="{{ $item->Jam }}" name="Jam" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label">Mapel</label>
+                              <input type="text" value="{{ $item->Mata_Pelajaran }}" name="Mata_Pelajaran" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputPassword4" class="form-label">Kelas</label>
+                                <select name="Kelas" name="Kelas" id="" class="form-control" >
+                                    <option value="10">{{ $item->Kelas }}</option>
+                                    <option value="10">X</option>
+                                    <option value="11">XI</option>
+                                    <option value="12">XII</option>
+                                  </select>
+                              </div>
+                              <div class="col-12">
+                                <label for="inputPassword4" class="form-label">Jurusan</label>
+                                <select name="Jurusan" id="" class="form-control" >
+                                    <option value="10">{{ $item->Jurusan }}</option>
+                                    <option value="DKV 1">DKV 1</option>
+                                    <option value="DKV 2">DKV 2</option>
+                                    <option value="PPLG 1">PPLG 1</option>
+                                    <option value="PPLG 2">PPLG 2</option>
+                                  </select>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </form>
+                  </div>
+                </div>
+              </div>
+              @endforeach
           </div>
         </div>
       </div>

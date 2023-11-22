@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\JadwalController;
+use App\Http\Controllers\RegisterguruController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GuruController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,13 +22,17 @@ Route::get('/index', function () {
 
 Route::post('/insertJadwal', [JadwalController::class, 'insertjadwal']);
 Route::get('/jadwal', [JadwalController::class, 'jadwal']);
+Route::get('/jadwal/{id}/hapus', [JadwalController::class, 'hapus']);
+Route::post('/jadwal/{id}/update', [JadwalController::class, 'update']);
+
+Route::post('/createguru', [RegisterguruController::class, 'insertregisterguru']);
+Route::get('/dataguru', [GuruController::class, 'dataguru']);
+
 
 Route::get('/template', function () {
     return view('template.templateadmin');
 });
-Route::get('/dataguru', function () {
-    return view('layout.dataguru');
-});
+
 Route::get('/datasiswa', function () {
     return view('layout.datasiswa');
 });

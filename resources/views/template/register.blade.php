@@ -15,7 +15,7 @@
   <body style="background-color: #F5F5F5;">
 
     <div class="login-form">
-      <form action="{{asset('admin')}}/https://kode.bragherstudio.com/index.html">
+      <form action="{{asset('admin')}}/register">
         <div class="top">
           <h1>Register</h1>
           <h4>Join to our community now !</h4>

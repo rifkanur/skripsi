@@ -9,14 +9,14 @@ use App\Models\Guru;
 class RegisterguruController extends Controller
 {
     public function registerGuru(){
-        $registerguru=RegisterGuru::get();
+        $registerguru=Guru::get();
 
         return view('layout.dataguru', compact('dataguru'));
     }
 
     public function insertregisterguru(Request $request){
         $data = $request->all();
-        RegisterGuru::insert([
+        Guru::insert([
             'Nama'=> $request->Nama,
             'Tanggal_Lahir'=> $request->Tanggal_Lahir,
             'Jenis_Kelamin'=> $request->Jenis_Kelamin,

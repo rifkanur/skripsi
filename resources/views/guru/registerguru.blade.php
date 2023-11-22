@@ -1,5 +1,13 @@
-@extends('template.register')
-@section('content')
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kode is a Premium Bootstrap Admin Template, It's responsive, clean coded and mobile friendly">
+  <meta name="keywords" content="bootstrap, admin, dashboard, flat admin template, responsive," />
+  <title>M-Ujian SMK Mahaputra Cerdas Utama</title>
 
  <!-- ========== Css Files ========== -->
  <link href="{{asset('admin')}}/css/root.css" rel="stylesheet">
@@ -7,7 +15,7 @@
 <body style="background-color: #F5F5F5;">
 
   <div class="login-form">
-    <form action="https://kode.bragherstudio.com/index.html">
+    <form action="/createguru" method="post">
         @csrf
       <div class="top">
         <h1>Register</h1>

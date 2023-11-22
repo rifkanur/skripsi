@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('Mata_Pelajaran');
             $table->integer('Kelas');
             $table->string('Jurusan');
+            $table->timestamps();
         });
     }
 
