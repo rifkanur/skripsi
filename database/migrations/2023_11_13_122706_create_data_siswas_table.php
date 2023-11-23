@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('Nama');
             $table->date('Tanggal_Lahir');
             $table->string('Jenis_Kelamin');
+            $table->string('Agama');
             $table->integer('Kelas');
             $table->string('Jurusan');
             $table->string('Email')->unique();

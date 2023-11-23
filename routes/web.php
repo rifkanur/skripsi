@@ -4,6 +4,8 @@ use App\Http\Controllers\JadwalController;
 use App\Http\Controllers\RegisterguruController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuruController;
+use App\Http\Controllers\RegistersiswaController;
+use App\Http\Controllers\DatasiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,21 +30,18 @@ Route::post('/jadwal/{id}/update', [JadwalController::class, 'update']);
 Route::post('/createguru', [RegisterguruController::class, 'insertregisterguru']);
 Route::get('/dataguru', [GuruController::class, 'dataguru']);
 
+Route::post('/createdatasiswa', [RegistersiswaController::class, 'insertregisterdatasiswa']);
+Route::get('/datasiswa', [DatasiswaController::class, 'datasiswa']);
+
 
 Route::get('/template', function () {
     return view('template.templateadmin');
 });
 
-Route::get('/datasiswa', function () {
-    return view('layout.datasiswa');
-});
-
 Route::get('/login', function () {
     return view('layout.login');
 });
-Route::get('/registersiswa', function () {
-    return view('siswa.registersiswa');
-});
+
 Route::get('/paketsoal', function () {
     return view('guru.paketsoal');
 });
