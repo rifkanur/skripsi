@@ -32,7 +32,9 @@ Route::get('/dataguru', [GuruController::class, 'dataguru']);
 
 Route::post('/createdatasiswa', [RegistersiswaController::class, 'insertregisterdatasiswa']);
 Route::get('/datasiswa', [DatasiswaController::class, 'datasiswa']);
-
+Route::get('/datasiswa/{id}/hapus', [DatasiswaController::class, 'hapus']);
+Route::get('/datasiswa/{id}/edit', [DatasiswaController::class, 'edit'] );
+Route::post('/datasiswa/{id}/edit', [DatasiswaController::class, 'update'] );
 
 Route::get('/template', function () {
     return view('template.templateadmin');
@@ -103,6 +105,9 @@ Route::get('/kisikisiadmin', function () {
 });
 Route::get('/index', function () {
     return view('layout.index');
+});
+Route::get('/registersiswa', function () {
+    return view('siswa.registersiswa');
 });
 
 
