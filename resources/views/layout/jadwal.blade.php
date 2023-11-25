@@ -58,6 +58,18 @@
           <h4 class="modal-title" id="myModalLabel">Modal title</h4>
         </div>
         <div class="modal-body">
+            @if ($errors->any())
+            <div class="pt-3">
+                <div class="alert danger">
+                    <ul>
+                        @foreach ($errors->all() as $item )
+                        <li>{{ $item }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+
+            @endif
             <form class="row g-3" action="/insertJadwal" method="POST">
                 @csrf
                 <div class="col-12">
@@ -128,7 +140,7 @@
                         <td>{{ $item->Kelas }}</td>
                         <td>{{ $item->Jurusan }}</td>
                         <td class="">
-                          <a href="/jadwal/{{ $item->id}}/hapus" class="btn btn-danger">
+                          <a href="/jadwal/{{ $item->id}}/hapus" id="data" class="btn btn-danger" onclick="confirmation(event)">
                           <i class="fa falist fa-trash"></i>
                           </a>
                           <button type="button" class="btn btn-warning mt-2" data-toggle="modal" data-target="#myModal{{ $item->id }}">

@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\RegistersiswaController;
 use App\Http\Controllers\DatasiswaController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,9 @@ Route::post('/jadwal/{id}/update', [JadwalController::class, 'update']);
 
 Route::post('/createguru', [RegisterguruController::class, 'insertregisterguru']);
 Route::get('/dataguru', [GuruController::class, 'dataguru']);
+Route::get('/dataguru/{id}/hapus', [GuruController::class, 'hapus']);
+Route::get('/dataguru/{id}/edit', [GuruController::class, 'edit'] );
+Route::post('/dataguru/{id}/edit', [GuruController::class, 'update'] );
 
 Route::post('/createdatasiswa', [RegistersiswaController::class, 'insertregisterdatasiswa']);
 Route::get('/datasiswa', [DatasiswaController::class, 'datasiswa']);
@@ -36,12 +40,12 @@ Route::get('/datasiswa/{id}/hapus', [DatasiswaController::class, 'hapus']);
 Route::get('/datasiswa/{id}/edit', [DatasiswaController::class, 'edit'] );
 Route::post('/datasiswa/{id}/edit', [DatasiswaController::class, 'update'] );
 
+Route::get('/login', [LoginController::class, 'viewlogin'])->name('login');
+Route::post('/login', [LoginController::class, 'login'])->name('actionlogin');
+
+
 Route::get('/template', function () {
     return view('template.templateadmin');
-});
-
-Route::get('/login', function () {
-    return view('layout.login');
 });
 
 Route::get('/paketsoal', function () {

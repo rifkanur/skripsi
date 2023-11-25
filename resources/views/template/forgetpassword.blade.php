@@ -15,7 +15,7 @@
   <body style="background-color: #F5F5F5;">
 
     <div class="login-form">
-      <form action="https://kode.bragherstudio.com/index.html">
+      <form action="">
         <div class="top">
           <h1>Forgot Password</h1>
           <h4>You can reset your password</h4>

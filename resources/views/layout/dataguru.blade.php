@@ -62,25 +62,26 @@
 
                   <tbody>
                     @foreach ($dataguru as $item )
-
-                    @endforeach
-                      <tr>
-                          <td>{{ $item->Nama }}</td>
-                          <td>{{ $item->Tanggal_Lahir }}</td>
-                          <td>{{ $item->Jenis_Kelamin }}</td>
-                          <td>{{ $item->Agama }}</td>
-                          <td>{{ $item->Email }}</td>
-                          <td>{{ $item->Password }}</td>
-                          <td class="">
-                            <a href="" class="btn btn-danger">
-                            <i class="fa falist fa-trash"></i>
+                    <tr>
+                        <td>{{ $item->Nama }}</td>
+                        <td>{{ $item->Tanggal_Lahir }}</td>
+                        <td>{{ $item->Jenis_Kelamin }}</td>
+                        <td>{{ $item->Agama }}</td>
+                        <td>{{ $item->Email }}</td>
+                        <td>{{ $item->Password }}</td>
+                        <td class="">
+                            <a href="/dataguru/{{ $item->id}}/hapus" class="btn btn-danger">
+                                <i class="fa falist fa-trash"></i>
                             </a>
 
-                            <a href="" class="btn btn-warning mt-2">
+                            <a href="/dataguru/{{ $item->id}}/edit" class="btn btn-warning mt-2">
                                 <i class="fa falist fa-pencil"></i>
                             </a>
-                        </td>
-                      </tr>
+                      </td>
+                    </tr>
+
+                    @endforeach
+
                   </tbody>
               </table>
 

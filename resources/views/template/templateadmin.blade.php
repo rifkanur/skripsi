@@ -186,5 +186,34 @@ Full Calendar
 Bootstrap Date Range Picker
 ================================================ -->
 <script src="{{asset('admin')}}/js/date-range-picker/daterangepicker.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript">
+    function confirmation(ev) {
+        ev.preventDefault();
+        var urlToRedirect = ev.currentTarget.getAttribute('data-href');
+        console.log(urlToRedirect);
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: "Deleted!",
+                    text: "Your file has been deleted.",
+                    icon: "success"
+                });
+                window.location.href=urlToRedirect;
+            }
+        });
+
+
+    }
+</script>
+
 </body>
 </html>

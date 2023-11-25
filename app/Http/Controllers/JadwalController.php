@@ -16,7 +16,15 @@ class JadwalController extends Controller
     }
 
     public function insertjadwal(Request $request){
-        $data = $request->all();
+        $data = $request->validate([
+            'Hari'=>'required',
+            'Tanggal'=>'required',
+            'Jam'=>'required',
+            'Mata_Pelajaran'=>'required',
+            'Kelas'=>'required',
+            'Jurusan'=>'required',
+
+        ]);
         jadwal::insert([
             'Hari'=> $request->Hari,
             'Tanggal'=> $request->Tanggal,
@@ -29,9 +37,10 @@ class JadwalController extends Controller
         return redirect('/jadwal');
     }
     public function hapus($id){
-        $data=jadwal::whereId($id);
+        $data=jadwal::find($id);
         $data->delete();
-        return redirect('/jadwal');
+        return redirect()->route('jadwal');
+
     }
     public function update($id,Request $request){
         $data=jadwal::whereId($id)->first();

@@ -7,7 +7,8 @@
   <body style="background-color: #f5f5f5;">
 
     <div class="login-form">
-      <form action="{{asset('admin')}}/https://kode.bragherstudio.com/index.html">
+      <form action="/login" method="post">
+        @csrf
         <div class="top">
           <img src="{{asset('admin')}}/img/m-ujian-icon.png" alt="icon" class="icon">
           <h1>M-Ujian</h1>
@@ -15,11 +16,11 @@
         </div>
         <div class="form-area">
           <div class="group">
-            <input type="text" class="form-control" placeholder="Emai">
+            <input type="text" name="email" class="form-control" placeholder="Email">
             <i class="fa fa-user"></i>
           </div>
           <div class="group">
-            <input type="password" class="form-control" placeholder="Password">
+            <input type="password" name="password" class="form-control" placeholder="Password">
             <i class="fa fa-key"></i>
           </div>
           <div class="checkbox checkbox-primary">
