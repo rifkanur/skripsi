@@ -6,7 +6,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\RegistersiswaController;
 use App\Http\Controllers\DatasiswaController;
+use App\Http\Controllers\ForgotpasswordController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\JadwalguruController;
+use App\Http\Controllers\JadwalsiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +30,9 @@ Route::post('/insertJadwal', [JadwalController::class, 'insertjadwal']);
 Route::get('/jadwal', [JadwalController::class, 'jadwal']);
 Route::get('/jadwal/{id}/hapus', [JadwalController::class, 'hapus']);
 Route::post('/jadwal/{id}/update', [JadwalController::class, 'update']);
+Route::get('/jadwalguru', [JadwalguruController::class, 'jadwalguru']);
+Route::get('/jadwalsiswa', [JadwalsiswaController::class, 'jadwalsiswa']);
+
 
 Route::post('/createguru', [RegisterguruController::class, 'insertregisterguru']);
 Route::get('/dataguru', [GuruController::class, 'dataguru']);
@@ -42,6 +48,11 @@ Route::post('/datasiswa/{id}/edit', [DatasiswaController::class, 'update'] );
 
 Route::get('/login', [LoginController::class, 'viewlogin'])->name('login');
 Route::post('/login', [LoginController::class, 'login'])->name('actionlogin');
+
+Route::post('/updatepassword/{id}', [ForgotpasswordController::class, 'update']);
+Route::get('/forgotpassword/{id}', [ForgotpasswordController::class, 'forgotpassword']);
+Route::post('/forgetpassword/{id}/update', [JadwalController::class, 'update']);
+Route::post('/findaccount', [ForgotpasswordController::class, 'findaccount'] );
 
 
 Route::get('/template', function () {
@@ -73,12 +84,7 @@ Route::get('/Laporan', function () {
 Route::get('/nilai', function () {
     return view('guru.nilai');
 });
-Route::get('/jadwalguru', function () {
-    return view('guru.jadwalguru');
-});
-Route::get('/jadwalsiswa', function () {
-    return view('siswa.jadwalsiswa');
-});
+
 Route::get('/kisikisiadmin', function () {
     return view('layout.kisikisiadmin');
 });
@@ -113,6 +119,10 @@ Route::get('/index', function () {
 Route::get('/registersiswa', function () {
     return view('siswa.registersiswa');
 });
+Route::get('/email', function () {
+    return view('template.email');
+});
+
 
 
 

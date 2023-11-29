@@ -13,7 +13,7 @@ class RegistersiswaController extends Controller
     public function registersiswa(){
         $registersiswa=data_siswa::get();
 
-        return view('layout.datasiswa', compact('datasiswa'));
+        return view('template.login', compact('login'));
     }
 
     public function insertregisterdatasiswa(Request $request){
@@ -38,7 +38,7 @@ class RegistersiswaController extends Controller
             'Email'=> $request->Email,
             'Password'=> $request->Password,
         ]);
-        return redirect('/datasiswa');
+        return redirect('/login');
     }
 
 }

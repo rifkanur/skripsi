@@ -42,7 +42,6 @@
               <div id="example0_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="example0_length"><label>Show <select name="example0_length" aria-controls="example0" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="example0_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="example0"></label></div><table id="example0" class="table display dataTable no-footer" role="grid" aria-describedby="example0_info">
                   <thead>
                       <tr role="row">
-                        <th class="sorting_asc" tabindex="0" aria-controls="example0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 253px;">Nomor</th>
                         <th class="sorting" tabindex="0" aria-controls="example0" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 399px;">Hari</th>
                         <th class="sorting" tabindex="0" aria-controls="example0" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 186px;">Tanggal</th>
                         <th class="sorting" tabindex="0" aria-controls="example0" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 99px;">Jam</th>
@@ -53,43 +52,17 @@
                       </tr>
                   </thead>
                   <tbody>
-                      <tr role="row" class="odd">
-                          <td class="sorting_1">1</td>
-                          <td>Senin</td>
-                          <td>10-juli-2023</td>
-                          <td>09:00</td>
-                          <td>Bahasa Indoneisa</td>
-                          <td>XII</td>
-                          <td>RPL</td>
-                      </tr>
-                      <tr role="row" class="odd">
-                        <td class="sorting_1">1</td>
-                        <td>Senin</td>
-                        <td>10-juli-2023</td>
-                        <td>09:00</td>
-                        <td>Bahasa Indoneisa</td>
-                        <td>XII</td>
-                        <td>RPL</td>
+                    @foreach ( $jadwalguru as $item )
+                    <tr>
+                        <td>{{ $item->Hari }}</td>
+                        <td>{{ $item->Tanggal }}</td>
+                        <td>{{ $item->Jam }}</td>
+                        <td>{{ $item->Mata_Pelajaran }}</td>
+                        <td>{{ $item->Kelas }}</td>
+                        <td>{{ $item->Jurusan }}</td>
                     </tr>
-                    <tr role="row" class="odd">
-                      <td class="sorting_1">1</td>
-                      <td>Senin</td>
-                      <td>10-juli-2023</td>
-                      <td>09:00</td>
-                      <td>Bahasa Indoneisa</td>
-                      <td>XII</td>
-                      <td>RPL</td>
-                  </tr>
-                  <tr role="row" class="odd">
-                    <td class="sorting_1">1</td>
-                    <td>Senin</td>
-                    <td>10-juli-2023</td>
-                    <td>09:00</td>
-                    <td>Bahasa Indoneisa</td>
-                    <td>XII</td>
-                    <td>RPL</td>
-                </tr>
 
+                    @endforeach
                   </tbody>
               </table><div class="dataTables_info" id="example0_info" role="status" aria-live="polite">Showing 1 to 25 of 31 entries</div><div class="dataTables_paginate paging_simple_numbers" id="example0_paginate"><a class="paginate_button previous disabled" aria-controls="example0" data-dt-idx="0" tabindex="0" id="example0_previous">Previous</a><span><a class="paginate_button current" aria-controls="example0" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="example0" data-dt-idx="2" tabindex="0">2</a></span><a class="paginate_button next" aria-controls="example0" data-dt-idx="3" tabindex="0" id="example0_next">Next</a></div></div>
 

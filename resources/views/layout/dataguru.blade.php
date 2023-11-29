@@ -70,9 +70,9 @@
                         <td>{{ $item->Email }}</td>
                         <td>{{ $item->Password }}</td>
                         <td class="">
-                            <a href="/dataguru/{{ $item->id}}/hapus" class="btn btn-danger">
+                            <a href="/dataguru/{{ $item->id}}/hapus" id="data" class="btn btn-danger" onclick="confirmation(event)">
                                 <i class="fa falist fa-trash"></i>
-                            </a>
+                                </a>
 
                             <a href="/dataguru/{{ $item->id}}/edit" class="btn btn-warning mt-2">
                                 <i class="fa falist fa-pencil"></i>

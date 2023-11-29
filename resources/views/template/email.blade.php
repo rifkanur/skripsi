@@ -15,18 +15,18 @@
   <body style="background-color: #F5F5F5;">
 
     <div class="login-form">
-      <form action="/updatepassword/{{ $id }}" method="post">
+      <form action="findaccount" method="post">
       @csrf
         <div class="top">
-          <h1>Forgot Password</h1>
+          <h1>CARI AKUN</h1>
           <h4>You can reset your password</h4>
         </div>
         <div class="form-area">
           <div class="group">
-            <input type="text" name="Password" class="form-control" placeholder="Password Baru">
-            <i class="fa fa-envelope-o"></i>
+            <input type="text" name="Email" class="form-control" placeholder="Email">
+            <i class="fa fa-user"></i>
           </div>
-          <button type="submit" class="btn btn-default btn-block">RESET PASSWORD</button>
+          <button type="submit" class="btn btn-default btn-block">Cari Akun</button>
         </div>
       </form>
       <div class="footer-links row">

@@ -190,7 +190,7 @@ Bootstrap Date Range Picker
 <script type="text/javascript">
     function confirmation(ev) {
         ev.preventDefault();
-        var urlToRedirect = ev.currentTarget.getAttribute('data-href');
+        var urlToRedirect = document.getElementById("data").href;
         console.log(urlToRedirect);
         Swal.fire({
             title: "Are you sure?",

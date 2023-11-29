@@ -39,7 +39,7 @@ class JadwalController extends Controller
     public function hapus($id){
         $data=jadwal::find($id);
         $data->delete();
-        return redirect()->route('jadwal');
+        return redirect('/jadwal');
 
     }
     public function update($id,Request $request){

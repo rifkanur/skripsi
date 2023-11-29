@@ -49,7 +49,7 @@
     <li class="dropdown link">
       <a href="#" data-toggle="dropdown" class="dropdown-toggle profilebox"><img src="{{asset('admin')}}/img/m-ujian-icon.png" alt="img"><b>Rifka Nur Fitriyah</b><span class="caret"></span></a>
         <ul class="dropdown-menu dropdown-menu-list dropdown-menu-right">
-          <li><a href="#"><i class="fa falist fa-power-off"></i> Logout</a></li>
+          <li><a href="/login"><i class="fa falist fa-power-off"></i> Logout</a></li>
         </ul>
     </li>
 
