@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('gurus', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('user_id');
             $table->string('Nama');
             $table->date('Tanggal_Lahir');
             $table->string('Jenis_Kelamin');

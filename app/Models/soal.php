@@ -8,11 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class soal extends Model
 {
     use HasFactory;
-    protected $table ="id_Paketsoal";
+    protected $table ="soals";
     protected $fillable=[
-        'id',
-        'id_Paketsoal',
-        'Mata_Pelajaran',
-
+        'id_paketsoal',
+        'Soal',
     ];
 }

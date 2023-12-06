@@ -8,9 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class paketsoal extends Model
 {
     use HasFactory;
-    protected $table ="id_Soal";
+    protected $table ="paketsoalgurus";
     protected $fillable=[
-        'id_Soal',
+        'Nama_Paket_Soal',
+        'Mata_Pelajaran',
+        'Kelas',
+        'Jurusan',
 
     ];
+
+    public $timestamps=false;
 }

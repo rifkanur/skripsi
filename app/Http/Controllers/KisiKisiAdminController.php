@@ -12,4 +12,5 @@ class KisiKisiAdminController extends Controller
         kisikisiguru::create($data);
 
     }
+
 }

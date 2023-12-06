@@ -69,10 +69,10 @@
         <li><a href="index.html"><span class="icon color5"><i class="fa fa-home"></i></span>Dashboard<span class="label label-default">2</span></a></li>
         <li><a href="#"><span class="icon color10"><i class="fa fa-check-square-o"></i></span>Ujian Online<span class="caret"></span></a>
           <ul>
-            <li><a href="form-elements.html">Kisi - Kisi</a></li>
-            <li><a href="layouts.html">Paket Soal</a></li>
-            <li><a href="text-editors.html">Koreksi Ujian</a></li>
-            <li><a href="text-editors.html">Laporan</a></li>
+            <li><a href="/kisikisi">Kisi - Kisi</a></li>
+            <li><a href="/paket">Paket Soal</a></li>
+            <li><a href="/koreksi">Koreksi Ujian</a></li>
+            <li><a href="/laporan">Laporan</a></li>
           </ul>
         </li>
 </div>
@@ -101,44 +101,6 @@
 
   <!-- End Presentation -->
  <!-- //////////////////////////////////////////////////////////////////////////// -->
- <form>
-    <div class="form-group row">
-      <label for="inputEmail3" class="col-sm-2 col-form-label">Nama Paket Soal</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="inputEmail3" placeholder="id Paket soal">
-      </div>
-    </div>
-    <div class="form-group row">
-      <label for="inputPassword3" class="col-sm-2 col-form-label">Mata Pelajaran</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="inputPassword3" placeholder="Mata Pelajaran">
-      </div>
-    </div>
-    <div class="form-group row">
-      <label for="inputPassword3" class="col-sm-2 col-form-label">Kelas</label>
-      <div class="col-sm-10">
-        <select name="" id="" class="form-control">
-          <option value="0">---</option>
-          <option value="10">X</option>
-          <option value="11">XI</option>
-          <option value="12">XII</option>
-        </select>
-
-      </div>
-    </div>
-    <div class="form-group row">
-      <label for="inputPassword3" class="col-sm-2 col-form-label">Jurusan</label>
-      <div class="col-sm-10">
-        <select name="" id="" class="form-control">
-          <option value="---">---</option>
-          <option value="DKV 1">DKV 1</option>
-          <option value="DKV 1">DKV 2</option>
-          <option value="PPLG 1">PPLG 1</option>
-          <option value="PPLG 1">PPLG 2</option>
-        </select>
-      </div>
-    </div>
-  </form>
 <!-- START CONTAINER -->
 <div class="container-padding">
   <!-- Start Row -->
@@ -152,15 +114,16 @@
 
             <div class="panel-body">
 
-              <form>
-                <div id="summernote1">Hello Summernote</div>
-
-              </form>
-
+              <form action="/insertsoal" method="post">
+                @csrf
+                <input type="hidden" name="id_paketsoal" value="{{ $id }}">
+                <textarea id="summernote1" name="Soal">Hello Summernote</textarea>
+              <button type="submit" class="btn btn-primary">Submit</button>
+             </form>
             </div>
 
 
-            <div class="panel-title" style="margin-top: 10px">
+            {{-- <div class="panel-title" style="margin-top: 10px">
               JAWABAN A
             </div>
 
@@ -208,44 +171,7 @@
                               </form>
 
                             </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="panel panel-default">
-
-        <div class="panel-title">
-          SOAL
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <a href=" " class="btn btn-primary rounded-circle " style="margin: 10px">1</a>
-          </div>
-          <div class="col-md-3">
-            <a href=" " class="btn btn-primary rounded-circle " style="margin: 10px">2</a>
-          </div>
-          <div class="col-md-3">
-            <a href=" " class="btn btn-primary rounded-circle"style="margin: 10px">3</a>
-          </div>
-          <div class="col-md-3">
-            <a href=" " class="btn btn-primary rounded-circle"style="margin: 10px">4</a>
-          </div>
-
-          <div class="col-md-3">
-            <a href=" " class="btn btn-primary rounded-circle"style="margin: 10px">5</a>
-          </div>
-          <div class="col-md-3">
-            <a href=" " class="btn btn-primary rounded-circle"style="margin: 10px">6</a>
-          </div>
-          <div class="col-md-3">
-            <a href=" " class="btn btn-primary rounded-circle" style="margin: 10px">7</a>
-          </div>
-        </div>
-
-
-
-
-
-      </div>
+      </div> --}}
     </div>
 
 

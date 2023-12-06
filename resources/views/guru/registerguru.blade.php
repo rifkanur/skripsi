@@ -27,7 +27,7 @@
           <i class="fa fa-user"></i>
         </div>
         <div class="group">
-          <input type="date" name="Tanggal_Lahir" class="form-control" placeholder="Tanggal Lahir">
+          <input type="date" placeholder="Tanggal Lahir" name="Tanggal_Lahir" class="form-control" >
           <i class="fa fa-calendar"></i>
         </div>
         <div class="group">

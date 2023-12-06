@@ -19,12 +19,6 @@ return new class extends Migration
             $table->string('Mata_Pelajaran');
             $table->integer('Kelas');
             $table->string('Jurusan');
-            $table->string('Soal_Ujian');
-            $table->string('Jawaban_A');
-            $table->string('Jawaban_B');
-            $table->string('Jawaban_C');
-            $table->string('Jawaban_D');
-            $table->string('Jawaban_E');
         });
     }
 

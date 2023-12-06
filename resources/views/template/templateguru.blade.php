@@ -63,9 +63,8 @@
           <li><a href="index.html"><span class="icon color5"><i class="fa fa-home"></i></span>Dashboard<span class="label label-default">2</span></a></li>
           <li><a href="#"><span class="icon color10"><i class="fa fa-check-square-o"></i></span>Ujian Online<span class="caret"></span></a>
             <ul>
-              <li><a href="/kisikisiguru">Kisi - Kisi</a></li>
-              <li><a href="/paketsoal">Paket Soal</a></li>
-              <li><a href="/koreksiujian">Koreksi Ujian</a></li>
+              <li><a href="/kisikisi">Kisi - Kisi</a></li>
+              <li><a href="/paket">Paket Soal</a></li>
               <li><a href="/laporan">Laporan</a></li>
             </ul>
             <li><a href="jadwalguru"><span class="icon color5"><i class="fa fa-home"></i></span>Jadwal<span class="label label-default"></span></a></li>
@@ -182,5 +181,33 @@ Full Calendar
 Bootstrap Date Range Picker
 ================================================ -->
 <script src="{{asset('admin')}}/js/date-range-picker/daterangepicker.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript">
+    function confirmation(ev) {
+        ev.preventDefault();
+        var urlToRedirect = document.getElementById("data").href;
+        console.log(urlToRedirect);
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: "Deleted!",
+                    text: "Your file has been deleted.",
+                    icon: "success"
+                });
+                window.location.href=urlToRedirect;
+            }
+        });
+
+
+    }
+</script>
 </body>
 </html>

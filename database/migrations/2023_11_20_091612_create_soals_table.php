@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('soals', function (Blueprint $table) {
             $table->id();
-            $table->string('Paketsoal');
+            $table->string('id_paketsoal');
             $table->string('Soal');
             $table->timestamps();
         });
