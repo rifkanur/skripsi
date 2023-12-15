@@ -75,6 +75,9 @@
             <li><a href="/laporan">Laporan</a></li>
           </ul>
         </li>
+        <li><a href="jadwalguru"><span class="icon color5"><i class="fa fa-home"></i></span>Jadwal<span class="label label-default"></span></a></li>
+    </li>
+
 </div>
 <!-- END SIDEBAR -->
 <!-- //////////////////////////////////////////////////////////////////////////// -->
@@ -369,6 +372,7 @@ $(document).ready(function() {
   $('#summernote5').summernote();
 });
 </script>
+
 
 </body>
 

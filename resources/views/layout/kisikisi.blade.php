@@ -45,7 +45,6 @@
               <div id="example0_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="example0_length"><label>Show <select name="example0_length" aria-controls="example0" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="example0_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="example0"></label></div><table id="example0" class="table display dataTable no-footer" role="grid" aria-describedby="example0_info">
                   <thead>
                       <tr role="row">
-                        <th class="sorting_asc" tabindex="0" aria-controls="example0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 10px;">Nomor</th>
                         <th class="sorting" tabindex="0" aria-controls="example0" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 100px;">Mata Pelajaran</th>
                         <th class="sorting" tabindex="0" aria-controls="example0" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 80px;">Kelas</th>
                         <th class="sorting" tabindex="0" aria-controls="example0" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 99px;">Jurusan</th>
@@ -58,7 +57,6 @@
                   <tbody>
                     @foreach ($kisikisi as $item)
                     <tr role="row" class="odd">
-                        <td class="sorting_1">1</td>
                         <td>{{ $item->Mata_Pelajaran }}</td>
                         <td>{{ $item->Kelas }}</td>
                         <td>{{ $item->Jurusan }}</td>
@@ -66,7 +64,7 @@
                         <td>{{ $item->Materi }}</td>
                         <td>{{ $item->Indikator_Soal }}</td>
                         <td class="">
-                            <a href="/kisikisi/{{ $item->id}}/hapus" id="data" class="btn btn-danger" onclick="confirmation(event)">
+                            <a href="/kisikisi/{{ $item->id}}/hapuskisikisi" id="data" class="btn btn-danger" onclick="confirmation(event)">
                                 <i class="fa falist fa-trash"></i>
                                 </a>
 

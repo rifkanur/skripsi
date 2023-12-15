@@ -50,50 +50,20 @@
                       </tr>
                   </thead>
                   <tbody>
-                    <tr role="row" class="odd">
-                        <td class="sorting_1">1</td>
-                        <td>PABP</td>
-                        <td>X</td>
-                        <td>PPLG 1
+                    @foreach ( $kisikisi as $item )
+                    <tr>
+                        <td>{{ $item->Mata_Pelajaran }}</td>
+                        <td>{{ $item->Kelas }}</td>
+                        <td>{{ $item->Jurusan }}</td>
+                        <td>{{ $item->Aksi }}</td>
                         <td class="">
-                            <a href="" class="btn btn-danger">
+                            <a href="" class="fa falist fa-eye">
                             <i class="fa falist fa-download"></i>
                             </a>
                         </td>
                     </tr>
-                      <tr role="row" class="odd">
-                        <td class="sorting_1">1</td>
-                        <td>PABP</td>
-                        <td>X</td>
-                        <td>PPLG 1
-                        <td class="">
-                            <a href="" class="btn btn-danger">
-                            <i class="fa falist fa-download"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr role="row" class="odd">
-                        <td class="sorting_1">1</td>
-                        <td>Bahasa Indonesia</td>
-                        <td>X</td>
-                        <td>PPLG 1
-                        <td class="">
-                            <a href="" class="btn btn-danger">
-                            <i class="fa falist fa-download"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr role="row" class="odd">
-                        <td class="sorting_1">1</td>
-                        <td>PABP</td>
-                        <td>X</td>
-                        <td>PPLG 1
-                        <td class="">
-                            <a href="" class="btn btn-danger">
-                            <i class="fa falist fa-download"></i>
-                            </a>
-                        </td>
-                    </tr>
+
+                    @endforeach
 
                   </tbody>
               </table><div class="dataTables_info" id="example0_info" role="status" aria-live="polite">Showing 1 to 25 of 31 entries</div><div class="dataTables_paginate paging_simple_numbers" id="example0_paginate"><a class="paginate_button previous disabled" aria-controls="example0" data-dt-idx="0" tabindex="0" id="example0_previous">Previous</a><span><a class="paginate_button current" aria-controls="example0" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="example0" data-dt-idx="2" tabindex="0">2</a></span><a class="paginate_button next" aria-controls="example0" data-dt-idx="3" tabindex="0" id="example0_next">Next</a></div></div>

@@ -64,7 +64,7 @@
           <li><a href="#"><span class="icon color10"><i class="fa fa-check-square-o"></i></span>Ujian Online<span class="caret"></span></a>
             <ul>
               <li><a href="/kisikisi">Kisi - Kisi</a></li>
-              <li><a href="/paket">Paket Soal</a></li>
+              <li><a href="/datapaket">Paket Soal</a></li>
               <li><a href="/laporan">Laporan</a></li>
             </ul>
             <li><a href="jadwalguru"><span class="icon color5"><i class="fa fa-home"></i></span>Jadwal<span class="label label-default"></span></a></li>
@@ -185,7 +185,7 @@ Bootstrap Date Range Picker
 <script type="text/javascript">
     function confirmation(ev) {
         ev.preventDefault();
-        var urlToRedirect = document.getElementById("data").href;
+        var urlToRedirect = ev.target.getAttribute("href");
         console.log(urlToRedirect);
         Swal.fire({
             title: "Are you sure?",

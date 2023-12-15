@@ -69,7 +69,7 @@
                                         <tr>
                                             <td>{!! $item->Soal !!}</td>
                                             <td class="">
-                                                <a href="/datapaket/{{ $item->id }}/hapus" id="data"
+                                                <a href="/datapaket/{{ $item->id }}/hapussoal" id="data"
                                                     class="btn btn-danger" onclick="confirmation(event)">
                                                     <i class="fa falist fa-trash"></i>
                                                 </a>
@@ -77,7 +77,7 @@
                                                     data-target="#myModal{{ $item->id }}">
                                                     <i class="fa falist fa-pencil"></i>
                                                 </button>
-                                                <a href="/datapaket/{{ $item->id }}/soal" id="data"
+                                                <a href="/datapaket/{{ $item->id }}/soal/tambahpilihan" id="data"
                                                     class="btn btn-inpull">
                                                     Pilihan Ganda
                                                 </a>

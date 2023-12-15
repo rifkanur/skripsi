@@ -26,9 +26,9 @@ class DatapaketController extends Controller
     }
 
     public function hapus($id){
-        // $data=paketsoal::find($id);
-        // $data->delete();
-        // return redirect('/datapaket');
+         $data=paketsoal::find($id);
+         $data->delete();
+         return redirect('/datapaket');
 
     }
 }

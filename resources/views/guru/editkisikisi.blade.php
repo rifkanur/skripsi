@@ -106,19 +106,19 @@
 
         <!-- End Presentation -->
         <!-- //////////////////////////////////////////////////////////////////////////// -->
-        <form action="/updatekisikisi" method="post">
+        <form action="" method="post">
             @csrf
             <div class="form-group row">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Nama Kisi - Kisi</label>
                 <div class="col-sm-10">
-                    <input type="text" name="Nama_kisi_kisi" class="form-control" id="inputEmail3"
+                    <input type="text" value="{{ $kisikisi->Nama_kisi_kisi }}" name="Nama_kisi_kisi" class="form-control" id="inputEmail3"
                         placeholder="Kisi Kisi">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="inputPassword3" class="col-sm-2 col-form-label">Mata Pelajaran</label>
                 <div class="col-sm-10">
-                    <input type="text" name="Mata_Pelajaran" class="form-control" id="inputEmail3"
+                    <input type="text" value="{{ $kisikisi->Mata_Pelajaran }}" name="Mata_Pelajaran" class="form-control" id="inputEmail3"
                         placeholder="Mata Pelajaran">
                 </div>
             </div>
@@ -127,7 +127,7 @@
                 <label for="inputPassword3" class="col-sm-2 col-form-label">Kelas</label>
                 <div class="col-sm-10">
                     <select name="Kelas" id="" class="form-control">
-                        <option value="0">--Pilih--</option>
+                        <option value="{{ $kisikisi->Kelas }}">{{ $kisikisi->Kelas }}</option>
                         <option value="10">X</option>
                         <option value="11">XI</option>
                         <option value="12">XII</option>
@@ -141,7 +141,7 @@
                 <label for="inputPassword3" class="col-sm-2 col-form-label">Jurusan</label>
                 <div class="col-sm-10">
                     <select name="Jurusan" id="" class="form-control">
-                        <option value="--Pilih--">--Pilih--</option>
+                        <option value="{{ $kisikisi->Jurusan }}">{{ $kisikisi->Jurusan }}</option>
                         <option value="DKV 1">DKV 1</option>
                         <option value="DKV 2">DKV 2</option>
                         <option value="PPLG 1">PPLG 1</option>
@@ -180,7 +180,7 @@
                             <form>
                                 @csrf
                                 <div>
-                                <input type="hidden" name="KIKD">
+                                <input type="hidden" value="{{ $kisikisi->KIKD }}" name="KIKD">
                 <textarea id="summernote1" name="KIKD">Hello Summernote</textarea>
 
 
@@ -198,7 +198,7 @@
 
 
 
-                            <input type="hidden" name="Tujuan_Pembelajaran">
+                            <input type="hidden" value="{{ $kisikisi->Tujuan_Pembelajaran }}" name="Tujuan_Pembelajaran">
                             <textarea id="summernote2" name="Tujuan_Pembelajaran">Hello Summernote</textarea>
 
 
@@ -210,7 +210,7 @@
 
 
                         <div class="panel-body">
-                            <input type="hidden" name="Materi">
+                            <input type="hidden" value="{{ $kisikisi->Materi }}" name="Materi">
                             <textarea id="summernote3" name="Materi">Hello Summernote</textarea>
 
                         </div>
@@ -222,13 +222,13 @@
                         <div class="panel-body">
 
 
-                            <input type="hidden" name="Indikator_Soal">
+                            <input type="hidden" value="{{ $kisikisi->Indikator_Soal }}" name="Indikator_Soal">
                             <textarea id="summernote4" name="Indikator_Soal">Hello Summernote</textarea>
                         </div>
 
                             <div class="modal-footer">
-                                <button type="submit" class="btn btn-primary">SUBMIT</button>
-                            </div>\
+                                <button type="submit" class="btn btn-primary">UPDATE KISI - KISI</button>
+                            </div>
         </form>
 
                         </div>

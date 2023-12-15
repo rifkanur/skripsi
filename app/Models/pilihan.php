@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class pilihan extends Model
 {
     use HasFactory;
-    protected $table ="pilihan";
+    protected $table ="pilihans";
     protected $fillable=[
         'id',
         'Pilihan_A',
@@ -16,6 +16,9 @@ class pilihan extends Model
         'Pilihan_C',
         'Pilihan_D',
         'Pilihan_E',
+        'pilihan_jawaban',
+        'id_Soal'
+
 
     ];
 }

@@ -12,7 +12,7 @@ class GuruController extends Controller
         return view('layout.dataguru', compact(['dataguru']));
 
     }
-    public function hapus($id){
+    public function hapusdataguru($id){
         $data=Guru::whereId($id);
         $data->delete();
         return redirect('/dataguru');

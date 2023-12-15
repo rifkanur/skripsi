@@ -34,7 +34,25 @@ class SoalController extends Controller
     public function hapus($id){
         $data=soal::find($id);
         $data->delete();
-        return redirect('/datasoal');
+        return redirect('/datapaket/'.$data->id_paketsoal.'/soal');
 
     }
+
+    public function hapussoal($id){
+        $data=soal::find($id);
+        $data->delete();
+        return redirect('/datapaket/'.$data->id_paketsoal.'/soal');
+
+    }
+
+    public function tambahpilihan($id)
+    {
+        return view('guru.pilihan', compact('id'));
+    }
+
+    public function tambahpaketsoal($id)
+    {
+        return view('guru.datapaket', compact('paketsoal'));
+    }
+
 }

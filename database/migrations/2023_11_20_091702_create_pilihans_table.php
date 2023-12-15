@@ -21,8 +21,7 @@ return new class extends Migration
             $table->string('Pilihan_C');
             $table->string('Pilihan_D');
             $table->string('Pilihan_E');
-            $table->string('ya');
-            $table->string('tidak');
+            $table->string('pilihan_jawaban');
             $table->timestamps();
         });
     }

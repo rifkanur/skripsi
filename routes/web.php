@@ -15,6 +15,7 @@ use App\Http\Controllers\DatapaketController;
 use App\Http\Controllers\KisikisiguruController;
 use App\Http\Controllers\SoalController;
 use App\Http\Controllers\KisikisiController;
+use App\Http\Controllers\PilihanController;
 
 
 /*
@@ -42,13 +43,13 @@ Route::get('/jadwalsiswa', [JadwalsiswaController::class, 'jadwalsiswa']);
 //
 Route::post('/createguru', [RegisterguruController::class, 'insertregisterguru']);
 Route::get('/dataguru', [GuruController::class, 'dataguru']);
-Route::get('/dataguru/{id}/hapus', [GuruController::class, 'hapus']);
+Route::get('/dataguru/{id}/hapusdataguru', [GuruController::class, 'hapusdataguru']);
 Route::get('/dataguru/{id}/edit', [GuruController::class, 'edit'] );
 Route::post('/dataguru/{id}/edit', [GuruController::class, 'update'] );
 
 Route::post('/createdatasiswa', [RegistersiswaController::class, 'insertregisterdatasiswa']);
 Route::get('/datasiswa', [DatasiswaController::class, 'datasiswa']);
-Route::get('/datasiswa/{id}/hapus', [DatasiswaController::class, 'hapus']);
+Route::get('/datasiswa/{id}/hapusdatasiswa', [DatasiswaController::class, 'hapusdatasiswa']);
 Route::get('/datasiswa/{id}/edit', [DatasiswaController::class, 'edit'] );
 Route::post('/datasiswa/{id}/edit', [DatasiswaController::class, 'update'] );
 
@@ -62,6 +63,8 @@ Route::post('/findaccount', [ForgotpasswordController::class, 'findaccount'] );
 
 Route::post('/insertpaketsoal', [PaketSoalController::class, 'insertpaketsoal']);
 Route::get('/paket', [PaketSoalController::class, 'paket']);
+Route::get('/datapaket/paket/tambahpaketsoal', [SoalController::class, 'tambahpaketsoal']);
+
 
 Route::get('/datapaket', [DatapaketController::class, 'datapaket']);
 Route::post('/datapaket/{id}/update', [DatapaketController::class, 'update']);
@@ -69,12 +72,19 @@ Route::get('/datapaket/{id}/soal', [SoalController::class, 'datasoal']);
 Route::get('/datapaket/{id}/soal/tambah', [SoalController::class, 'tambahdatasoal']);
 Route::post('/insertsoal', [SoalController::class, 'insertsoal']);
 Route::get('/datapaket/{id}/hapus', [DatapaketController::class, 'hapus']);
+Route::get('/datapaket/{id}/hapussoal', [SoalController::class, 'hapussoal']);
+Route::get('/datapaket/{id}/soal/tambahpilihan', [SoalController::class, 'tambahpilihan']);
+Route::post('/insertpilihan', [PilihanController::class, 'insertpilihan']);
 
 Route::get('/kisikisiguru', [KisikisiguruController::class, 'kisikisiguru']);
 Route::post('/createkisikisi', [KisikisiguruController::class, 'createkisikisi']);
 
 Route::get('/kisikisi', [KisikisiController::class, 'kisikisi']);
 Route::get('/editkisikisi/{id}/edit', [KisikisiController::class, 'edit']);
+Route::get('/kisikisi/{id}/hapuskisikisi', [KisikisiController::class, 'hapuskisikisi']);
+Route::get('/kisikisi/{id}/updatekisikisi', [KisikisiController::class, 'updatekisikisi'] );
+
+
 
 Route::get('/template', function () {
     return view('template.templateadmin');

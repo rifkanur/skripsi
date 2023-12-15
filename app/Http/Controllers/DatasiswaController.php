@@ -12,7 +12,7 @@ class DatasiswaController extends Controller
         $datasiswa = data_siswa::all();
         return view('layout.datasiswa', compact(['datasiswa']));
     }
-    public function hapus($id)
+    public function hapusdatasiswa($id)
     {
         $data = data_siswa::whereId($id);
         $data->delete();

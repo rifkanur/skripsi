@@ -37,6 +37,9 @@
                     <div class="panel-title">
                         DAtaTables
                     </div>
+                    <a href="/paket" class="btn btn-primary btn-lg">
+                        Tambah Paket Soal
+                    </a>
                     <div class="panel-body table-responsive">
 
                         <!-- modal -->

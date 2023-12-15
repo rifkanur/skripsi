@@ -64,7 +64,7 @@
           <li><a href="#"><span class="icon color10"><i class="fa fa-check-square-o"></i></span>Ujian Online<span class="caret"></span></a>
             <ul>
               <li><a href="/jadwalsiswa">Jadwal</a></li>
-              <li><a href="/kisikisi">Kisi - Kisi</a></li>
+              <li><a href="/kisikisisiswa">Kisi - Kisi</a></li>
               <li><a href="/list-ujian">Ujian</a></li>
               <li><a href="/hasilujian">Hasil Ujian</a></li>
             </ul>
@@ -232,5 +232,27 @@ $(document).ready(function() {
     } );
 } );
 </script>
+
+    <script>
+    $(document).ready(function () {
+          $('popup').on('click', 'td.warning input', function () {
+            Swal.fire({
+                    title: "Wow!",
+                    text: "Message!",
+                    type: "success",
+                    showCancelButton: true,
+                    cancelButtonText: "View",
+                    confirmButtonText: 'Download!',
+                },
+                function (isConfirm) {
+                    if (isConfirm) {
+                        swal("Deleted!", "Your imaginary file has been deleted!", "success");
+                    } else {
+                        swal("Cancelled", "Your imaginary file is safe :)", "error");
+                    }
+                });
+          });
+      });
+    </script>
 </body>
 </html>

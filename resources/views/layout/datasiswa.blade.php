@@ -74,7 +74,7 @@
                           <td>{{ $item->Email }}</td>
                           <td>{{ $item->Password }}</td>
                           <td class="">
-                            <a href="/datasiswa/{{ $item->id}}/hapus" id="data" class="btn btn-danger" onclick="confirmation(event)">
+                            <a href="/datasiswa/{{ $item->id}}/hapusdatasiswa" id="data" class="btn btn-danger" onclick="confirmation(event)">
                                 <i class="fa falist fa-trash"></i>
                                 </a>
 
